@@ -1,0 +1,77 @@
+12:55:14.694 karate.env system property was:  
+12:55:14.710 >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+12:55:15.145 request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 64
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{"user":{"email":"karate1@testone.com","password":"karate1234"}}
+
+12:55:16.287 response time in milliseconds: 1128.98
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 65d478378a6dbade-SCL
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 10 Jun 2021 17:55:16 GMT
+1 < ETag: W/"019f3526289414c728619dd7b41463c9"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=axTypRbd7mewLnkWy3lRc7o6%2BtJrT0bnyeaHM8OX9S3f35nOkOnqS%2BKWYhi1FI0H815BhZwSbqXxOSO5TQOZul4bcs9UM6Vp2xa6JLmdJqrvuSz2pwvDhBaSW4adq%2BkDX0LZ7O%2BVXn0%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 4a35a351-115c-4721-943e-c25a7037a464
+1 < X-Runtime: 0.082090
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < cf-request-id: 0a98a976ba0000bade05a77000000001
+{"user":{"id":140470,"email":"karate1@testone.com","createdAt":"2021-02-04T16:21:38.470Z","updatedAt":"2021-02-04T16:21:38.482Z","username":"karate1test","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQwNDcwLCJ1c2VybmFtZSI6ImthcmF0ZTF0ZXN0IiwiZXhwIjoxNjI4NTMxNzE2fQ.sHOaA2KfZH9d9aJ87kPXz0ig2XPMATQtoR06QCecIiI"}}
+
+12:55:16.335 << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+12:55:16.673 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQwNDcwLCJ1c2VybmFtZSI6ImthcmF0ZTF0ZXN0IiwiZXhwIjoxNjI4NTMxNzE2fQ.sHOaA2KfZH9d9aJ87kPXz0ig2XPMATQtoR06QCecIiI
+1 > Connection: Keep-Alive
+1 > Content-Length: 95
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{"user":{"email":"andrea69@test.com","password":"1234karate","username":"stanford.gusikowski"}}
+
+12:55:17.422 response time in milliseconds: 743.42
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 65d4783f3f23752b-SCL
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 10 Jun 2021 17:55:17 GMT
+1 < ETag: W/"d175410d26faf8beb721641d6cf7f717"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: /
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v2?s=QtVVJtwTM7926ZTa%2Bfl5hIbLN5k%2BdLSficdLmkjZ8pLASbRJmrprcCbChge55hBQogpIDG09r5RJOx9%2B9T5Gkfx3XkpMq3HLQkafzzAzE8VAukSeLqUR75dg5nCzHOXbmg4ElaJ4VI8%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 4e2ffb3f-7966-4758-9537-a42da0d00faa
+1 < X-Runtime: 0.095589
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < cf-request-id: 0a98a97b820000752b80910000000001
+{"user":{"id":174846,"email":"andrea69@test.com","createdAt":"2021-06-10T17:55:17.379Z","updatedAt":"2021-06-10T17:55:17.385Z","username":"stanford.gusikowski","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTc0ODQ2LCJ1c2VybmFtZSI6InN0YW5mb3JkLmd1c2lrb3dza2kiLCJleHAiOjE2Mjg1MzE3MTd9.xBarFNrt2y4R0_khug8fC6AUn-WSwoqZrnenOhzFfeQ"}}
+
